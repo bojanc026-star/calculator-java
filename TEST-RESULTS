@@ -22,3 +22,14 @@
 3. Negative numbers after arithmetic operators are not supported.
 4. Input validation is insufficient.
 5. Float data type may cause precision loss for large calculations.
+
+## Unit Test
+A unit test was created to verify that the calculator correctly applies arithmetic operator precedence.
+
+```java
+@Test
+public void testCalculation() {
+    String result = Calculator.Run("10+5*4");
+    assertEquals("30.0", result);
+}
+```
