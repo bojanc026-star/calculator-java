@@ -1,0 +1,24 @@
+# Test Results
+
+## Black Box Testing
+
+| Test ID | Input | Expected Result | Actual Result | Status |
+|----------|----------|----------|----------|----------|
+| T1 | 2+3 | 5 | 5 | PASS |
+| T2 | 10+5*4 | 30 | 30 | PASS |
+| T3 | 10*5+4 | 54 | 54 | PASS |
+| T4 | 10/2 | 5 | 5 | PASS |
+| T5 | -5+2 | -3 | -3 | PASS |
+| T6 | +5+2 | 7 | 7 | PASS |
+| T7 | 5/0 | ERROR | Infinity | FAIL |
+| T8 | prazan unos | ERROR | Exception | FAIL |
+| T9 | 5+-2 | 3 | ERROR | FAIL |
+| T10 | abc | ERROR | ERROR | PASS |
+
+## Detected Issues
+
+1. Division by zero is not explicitly handled.
+2. Empty input causes application failure.
+3. Negative numbers after arithmetic operators are not supported.
+4. Input validation is insufficient.
+5. Float data type may cause precision loss for large calculations.
